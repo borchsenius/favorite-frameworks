@@ -1,4 +1,14 @@
-# VanillaApp
+# Demonstration web app
+This is a demonstration web app that use angular 4, bootstrap 4 and font awesome 4.7.
+
+
+`$ git clone git@github.com:LundOgBendsen/ufm.git`
+
+`$ cd demonstration`
+
+ `$ npm install`
+ 
+ `$ ng serve -open`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 

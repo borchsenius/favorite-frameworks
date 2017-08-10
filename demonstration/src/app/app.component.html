@@ -3,17 +3,26 @@
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Top navbar</a>
+  <a class="navbar-brand" href="#">Demonstration</a>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#angular">Angular <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#bootstrap">Bootstrap</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#fontawesome">Font Awesome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">ng-animation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Webfonts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">OpenLayers Map</a>
       </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">
@@ -23,7 +32,7 @@
   </div>
 </nav>
 
-<div class="container " >
+<div id="angular" class="container " >
   <div class="jumbotron bg-info">
     <div class="h1 text-center"> <img width="300"
                           src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo="></div>
@@ -35,7 +44,7 @@
     <p><a class="btn btn-lg btn-primary" href="https://angular.io/docs" role="button">Angular.io Docs &raquo;</a></p>
   </div>
 
-  <div class="jumbotron bg-danger ">
+  <div id="bootstrap" class="jumbotron bg-danger ">
     <div class="h1 text-center"> <a title="By Bootstrap (http://blog.getbootstrap.com) [Public domain], via Wikimedia Commons"
                                     href="https://commons.wikimedia.org/wiki/File%3ABoostrap_logo.svg"><img width="300" alt="Boostrap logo"
                                                                                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/512px-Boostrap_logo.svg.png"/></a>
@@ -57,10 +66,10 @@
 
   </div>
 
-  <div class="jumbotron rounded bg-success text-white h-100 justify-content-center align-items-center"  >
+  <div id="fontawesome" class="jumbotron rounded bg-success text-white h-100 justify-content-center align-items-center"  >
       <span class="row h-100 justify-content-center align-items-center">
         <h1 class="display-1" >{{title_fontawesome}} </h1>
-                        <i class="fa fa-font-awesome fa-5x p-4 m-1" aria-hidden="true"></i>
+                        <i class="fa fa-font-awesome fa-5x p-4 m-1 " style="text-shadow: 3px 6px rgba(39,38,52,0.69);" aria-hidden="true"></i>
 
       </span>
     <span class="lead p-4">Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</span>
@@ -69,12 +78,12 @@
     <div class="row h-100 p-5 justify-content-center align-items-center">
       <div class="alert alert-info col-2 text-center" role="alert">
         <p class="h4"><strong>Take it easy</strong></p>
-        <p><i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i></p>
+        <p><i class="fa fa-snowflake-o fa-5x " style="text-shadow: 3px 6px #ebeeff;" aria-hidden="true"></i></p>
       </div>
       <div class="alert alert-danger col-2 offset-2 alert-dismissible text-center" role="alert">
         <p class="h4"><strong>Don't get</strong></p>
         <p class="h4"><strong>too hot</strong></p>
-        <p><i class="fa fa-thermometer-full fa-5x" aria-hidden="true"></i></p>
+        <p><i class="fa fa-thermometer-full fa-5x " aria-hidden="true"></i></p>
       </div>
     </div>
     <div class="row h-100  ">
