@@ -13,7 +13,6 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'Tour of Heroes';
   title_angular = 'Angular';
-  title_bootstrap = 'Bootstrap & ng-bootsrap';
   title_fontawesome = 'Font awesome';
 
 
