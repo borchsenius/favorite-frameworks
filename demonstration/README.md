@@ -8,6 +8,11 @@ This is a demonstration web app that use angular 4, bootstrap 4 and font awesome
 
  `$ npm install`
  
+ ` $ npm i webpack --save-dev`
+ `$  npm install ng-bootstrap bootstrap@4.0.0-alpha.6 --save`
+ 
+
+ 
  `$ ng serve -open`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.

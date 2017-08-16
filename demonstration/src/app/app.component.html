@@ -11,7 +11,13 @@
 			<li class="nav-item active"><a class="nav-link" href="#angular">Angular
 					<span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a>
+			<li class="nav-item"><a class="nav-link" routerLink="/dashboard"  routerLinkActive="active">Dashboard</a>
+
+			</li>
+      <li class="nav-item"><a class="nav-link" routerLink="/heroes"  routerLinkActive="active">Heroes</a>
+
+			</li>
+      <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="#fontawesome">Font
 					Awesome</a></li>
@@ -21,6 +27,7 @@
 			</li>
 			<li class="nav-item"><a class="nav-link disabled" href="#">OpenLayers
 					Map</a></li>
+      <li class="nav-item"><a class="nav-link disabled" href="#">Schema.org</a></li>
 		</ul>
 		<form class="form-inline mt-2 mt-md-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -31,23 +38,14 @@
 
 <div id="angular" class="container ">
 
-	<div id="fontawesome"
+	<div id="tour-of-heroes"
 		class="jumbotron rounded h-100 justify-content-center align-items-center">
 		<div class="row h-100 justify-content-center align-items-center">
 			<h1 class="display-1">{{title}}</h1>
-			<div class="jumbotron  col-5">
-				<h2>My Heroes</h2>
-				<ul class="list-group">
-					<li *ngFor="let hero of heroes" (click)="onSelect(hero)"
-						class="list-group-item" [class.active]="hero === selectedHero">
-						{{hero.name}} <span class="badge badge-info">{{hero.id}}</span>
-					</li>
-				</ul>
-			</div>
 
 		</div>
-		<app-hero-detail [hero]="selectedHero"></app-hero-detail>
-		
+    <router-outlet></router-outlet>
+
 	</div>
 </div>
 

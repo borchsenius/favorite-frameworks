@@ -1,0 +1,28 @@
+<div class="jumbotron  col-5">
+  <h2>My Heroes</h2>
+  <div>
+    <label>Hero name:</label> <input #heroName />
+    <a href="#" class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">Add</a>
+
+  </div>
+
+  <ul class="list-group">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+        class="list-group-item" [class.active]="hero === selectedHero">
+      {{hero.name}}
+      <div class="pull-right">
+      <span class="badge badge-info ">{{hero.id}}</span>
+      <a href="#" class="btn btn-danger" (click)="delete(hero)">x</a>
+      </div>
+
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedHero" class="card col-5">
+  <div class="card-block">
+    <h4 class="card-title"> {{selectedHero.name | uppercase}} is my hero!</h4>
+
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+</div>
