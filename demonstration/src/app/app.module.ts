@@ -18,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
+import { DemoAngularComponent } from './demo-angular/demo-angular.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
+  { path: 'angular',     component: DemoAngularComponent },
   { path: 'bootstrap',     component: DemoBootstrapComponent },
   { path: 'fontawesome',     component: DemoFontawesomeComponent }
 ];
@@ -39,6 +41,7 @@ const routes: Routes = [
     HeroesComponent,
     DemoBootstrapComponent,
     DemoFontawesomeComponent,
+    DemoAngularComponent,
   ],
   imports: [
     BrowserModule,
