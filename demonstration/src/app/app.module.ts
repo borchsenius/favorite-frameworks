@@ -17,6 +17,7 @@ import { HeroService } from "./hero.service";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
+import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
-  { path: 'bootstrap',     component: DemoBootstrapComponent }
+  { path: 'bootstrap',     component: DemoBootstrapComponent },
+  { path: 'fontawesome',     component: DemoFontawesomeComponent }
 ];
 
 
@@ -36,6 +38,7 @@ const routes: Routes = [
     HeroDetailComponent,
     HeroesComponent,
     DemoBootstrapComponent,
+    DemoFontawesomeComponent,
   ],
   imports: [
     BrowserModule,
