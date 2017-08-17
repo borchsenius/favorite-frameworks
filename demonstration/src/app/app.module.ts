@@ -19,6 +19,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,7 @@ const routes: Routes = [
     DemoBootstrapComponent,
     DemoFontawesomeComponent,
     DemoAngularComponent,
+    HeroSearchComponent,
   ],
   imports: [
     BrowserModule,
