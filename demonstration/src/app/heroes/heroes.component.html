@@ -1,6 +1,6 @@
 <div class="jumbotron  col-5">
   <h2>My Heroes</h2>
-  <div>
+  <div class="container">
     <label>Hero name:</label> <input #heroName />
     <button class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">Add</button>
 
@@ -8,12 +8,14 @@
 
   <ul class="list-group">
     <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
-        class="list-group-item" [class.active]="hero === selectedHero">
+        class="list-group-item justify-content-between" [class.active]="hero === selectedHero">
       {{hero.name}}
-      <div class="pull-right">
-      <span class="badge badge-info ">{{hero.id}}</span>
-      <button  class="btn btn-danger" (click)="delete(hero)">x</button>
-      </div>
+
+      <span class="badge badge-default badge-pill">{{hero.id}}</span>
+
+
+      <button class="btn btn-danger" (click)="delete(hero)"><i class="fa fa-remove" aria-hidden="true"></i></button>
+
 
     </li>
   </ul>
