@@ -16,6 +16,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from "./hero.service";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
+import { NgbdModalBasic } from "./demo-bootstrap/Ngbd-modal-basic";
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
@@ -31,6 +32,7 @@ import {AppRoutingModule} from "./app-routing.module";
     DemoFontawesomeComponent,
     DemoAngularComponent,
     HeroSearchComponent,
+    NgbdModalBasic
   ],
   imports: [
     BrowserModule,
