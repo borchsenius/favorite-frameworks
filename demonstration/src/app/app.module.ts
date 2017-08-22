@@ -20,6 +20,7 @@ import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.componen
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 
 const routes: Routes = [
@@ -50,8 +51,8 @@ const routes: Routes = [
     FormsModule, // <-- import the FormsModule before binding with [(ngModel)]
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    //AppRoutingModule,
-    RouterModule.forRoot(routes, {enableTracing: true}),
+    AppRoutingModule,
+    //RouterModule.forRoot(routes, {enableTracing: true}),
     NgbModule.forRoot()
   ],
   providers: [HeroService],
