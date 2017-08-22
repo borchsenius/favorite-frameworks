@@ -14,19 +14,19 @@
   <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.0/components/alerts/" role="button">Bootstraps
     reusable components &raquo;</a>
 
-  <h1 class="display-2 text-center">ng-boostrap</h1>
+  <h1 class="display-2 text-center">ng-bootstrap</h1>
   <p class="lead">Angular - specific widgets built from ground and using Bootstrap 4 CSS. APIs that makes sense in the Angular ecosystem. No dependencies on 3rd party JavaScript.</p>
   <a class="btn btn-lg btn-primary" href="https://ng-bootstrap.github.io/#/components/accordion/api" role="button">ng-boostrap &raquo;</a>
 
 </div>
 
 <div class="container">
-  <h1 class="display-2">Samples </h1>
+  <h1 class="display-2">ng-bootstrap examples </h1>
   <div class="jumbotron jumbotron-fluid rounded border border-dark">
     <div class="container">
-      <h1 class="display-5">    Launch modal box</h1>
+      <h1 class="display-5">Launch modal box</h1>
       <p class="lead">This is the classic modal box. Note that a special component from ng-bootstrap is used.</p>
-      <ngbd-modal-basic></ngbd-modal-basic>
+      <ngbd-modal-basic class="pull-right"></ngbd-modal-basic>
     </div>
   </div>
 
@@ -40,11 +40,16 @@
 
   <div class="jumbotron jumbotron-fluid rounded border border-info">
     <div class="container">
-      <h1 class="display-5">Progress bar ng-bootstrap vs. bootstrap</h1>
-      <p class="lead">Look at it go!</p>
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-      </div>
+      <h1 class="display-5">Progress bar from ng-bootstrap</h1>
+      <p class="lead">Static at 75% </p>
+      <ngbd-progressbar-labels></ngbd-progressbar-labels>
+      <p class="lead">Dynamic; Look at it go!</p>
+
+      <p><ngb-progressbar type="info" [value]="loading" [striped]="true" [animated]="true"><i>{{loading}}%</i></ngb-progressbar></p>
+
+      <a class="btn btn-lg btn-primary pull-right" href="https://ng-bootstrap.github.io/#/components/progressbar/examples" role="button">ng-boostrap Progressbar &raquo;</a>
+
+
     </div>
   </div>
 

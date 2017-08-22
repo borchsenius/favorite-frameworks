@@ -17,6 +17,8 @@ import { HeroService } from "./hero.service";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
 import { NgbdModalBasic } from "./demo-bootstrap/Ngbd-modal-basic";
+import {NgbdProgressbarLabels} from "./demo-bootstrap/ngbd-progressbar-labels";
+
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
@@ -29,10 +31,11 @@ import {AppRoutingModule} from "./app-routing.module";
     HeroDetailComponent,
     HeroesComponent,
     DemoBootstrapComponent,
+    NgbdModalBasic,
+    NgbdProgressbarLabels,
     DemoFontawesomeComponent,
     DemoAngularComponent,
-    HeroSearchComponent,
-    NgbdModalBasic
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
