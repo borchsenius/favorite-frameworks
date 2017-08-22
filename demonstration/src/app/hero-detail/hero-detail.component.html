@@ -1,7 +1,9 @@
-
-<div *ngIf="hero" class="card col-5">
+<div class="row h-100 justify-content-center align-items-center">
+  <h1 class="display-1">{{hero.name}}</h1>
+</div>
+<div *ngIf="hero" class="card col-5 m-2 p-5">
 	<div class="card-block">
-		<h4 class="card-title">{{hero.name}} details!</h4>
+		<h4 class="card-title">Details</h4>
 		<p class="card-text">
 			<label>id: </label>{{hero.id}}
 		</p>
