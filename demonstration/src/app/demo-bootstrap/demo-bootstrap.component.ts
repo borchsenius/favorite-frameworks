@@ -12,19 +12,17 @@ export class DemoBootstrapComponent implements OnInit {
   private timer;
 
   increaseCounter() {
-    console.log("increasing ");
 
     if(this.loading<100 ){
       this.loading = this.loading + 1;
     }else {
+      console.log("loop");
       this.loading = 0;
-      this.timer = null;
     }
-
   }
 
   startTimerX() {
-    console.log("Starting timerX");
+    console.log("Starting timer");
     this.timer = setInterval(() => this.increaseCounter(), 200);
   }
 
@@ -34,9 +32,15 @@ export class DemoBootstrapComponent implements OnInit {
 
   ngOnInit() {
     this.loading = 0;
-
     this.startTimerX();
 
   }
+  ngOnDestroy(){
+    if (this.timer) {
+      console.log("Stopping timer ");
+      clearInterval(this.timer);
+    }
+  }
+
 
 }

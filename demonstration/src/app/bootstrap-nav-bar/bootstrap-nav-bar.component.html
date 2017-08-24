@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand"  routerLink="/dashboard" routerLinkActive="active">Favorite Frameworks</a>
+  <button class="navbar-toggler" (click)="collapse=!collapse" type="button" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse" (click)="collapse=true" [hidden]="collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/heroes" routerLinkActive="active">Heroes</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/angular" routerLinkActive="active">Angular</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/bootstrap" routerLinkActive="active">Bootstrap</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/fontawesome" routerLinkActive="active">Font Awesome</a></li>
+      <li class="nav-item"><a class="nav-link disabled" >ng-animation</a></li>
+      <li class="nav-item"><a class="nav-link disabled" >Webfonts</a></li>
+      <li class="nav-item"><a class="nav-link disabled" >OpenLayers Map</a></li>
+      <li class="nav-item"><a class="nav-link disabled" >Schema.org</a></li>
+      <li class="nav-item"><a class="nav-link disabled" >i18N</a></li>
+    </ul>
+  </div>
+</nav>

@@ -23,6 +23,7 @@ import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.co
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { BootstrapNavBarComponent } from './bootstrap-nav-bar/bootstrap-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {AppRoutingModule} from "./app-routing.module";
     NgbdProgressbarLabels,
     DemoFontawesomeComponent,
     DemoAngularComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    BootstrapNavBarComponent
   ],
   imports: [
     BrowserModule,
