@@ -7,9 +7,11 @@ import { HeroDetailComponent }  from './tor-hero-detail/hero-detail.component';
 import {DemoAngularComponent} from "./demo-angular/demo-angular.component";
 import {DemoBootstrapComponent} from "./demo-bootstrap/demo-bootstrap.component";
 import {DemoFontawesomeComponent} from "./demo-fontawesome/demo-fontawesome.component";
+import {FrontpageComponent} from "./frontpage/frontpage.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
+  { path: 'frontpage',  component: FrontpageComponent },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },

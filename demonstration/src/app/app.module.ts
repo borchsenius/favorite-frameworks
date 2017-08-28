@@ -25,6 +25,7 @@ import { NgbdModalBasic } from "./demo-bootstrap/Ngbd-modal-basic";
 import { NgbdProgressbarLabels } from "./demo-bootstrap/ngbd-progressbar-labels";
 import { DemoFontawesomeComponent } from './demo-fontawesome/demo-fontawesome.component';
 import { DemoAngularComponent } from './demo-angular/demo-angular.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { DemoAngularComponent } from './demo-angular/demo-angular.component';
     DemoFontawesomeComponent,
     DemoAngularComponent,
     HeroSearchComponent,
-    BootstrapNavBarComponent
+    BootstrapNavBarComponent,
+    FrontpageComponent
   ],
   imports: [
     BrowserModule,
