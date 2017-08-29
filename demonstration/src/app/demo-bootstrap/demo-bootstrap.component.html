@@ -1,71 +1,71 @@
-<div id="bootstrap" class="jumbotron">
-  <div class="h1 text-center"> <a title="By Bootstrap (http://blog.getbootstrap.com) [Public domain], via Wikimedia Commons"
-                                  href="https://commons.wikimedia.org/wiki/File%3ABoostrap_logo.svg"><img width="300" alt="Boostrap logo"
-                                                                                                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/512px-Boostrap_logo.svg.png"/></a>
+<div id="bootstrap" class="jumbotron my-3">
+  <div class="h1 text-center"><a
+    title="By Bootstrap (http://blog.getbootstrap.com) [Public domain], via Wikimedia Commons"
+    href="https://commons.wikimedia.org/wiki/File%3ABoostrap_logo.svg">
+    <img width="300" alt="Boostrap logo"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/512px-Boostrap_logo.svg.png"/></a>
   </div>
   <h1 class="display-2 text-center">{{title_bootstrap}}</h1>
+  <hr>
+  <div class="row my-4">
 
-  <div class="row">
+    <p class="lead">Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most
+      popular front-end frameworks and open source projects in the world.</p>
+    <p>Over a dozen reusable components built to provide buttons, dropdowns, input groups, navigation,
+      alerts, and much more.</p>
 
-  <p class="lead">Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most
-    popular front-end frameworks and open source projects in the world.</p>
-  <p class="lead">Over a dozen reusable components built to provide buttons, dropdowns, input groups, navigation,
-    alerts, and much more.</p>
-  <p>
-    <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.0/components/alerts/" role="button">Bootstraps
-      reusable components &raquo;</a>
-  </p>
+    <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the
+      device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful
+      mixins for generating more semantic layouts.</p>
+    <div class="text-center">
+    <blockquote class="blockquote ">
+      <p  class="mb-0 col-lg-7 m-auto">"Build responsive, mobile-first projects on the web with the world's most popular front-end component library."</p>
+      <footer class="blockquote-footer">From the frontpage of <cite title="Source Title">getbootstrap.com</cite></footer>
+
+    </blockquote>
+
+
+    </div>
 
   </div>
-  <div class="row">
-    <h1 class="display-2 text-center">ng-bootstrap</h1>
-    <p class="lead">Angular - specific widgets built from ground and using Bootstrap 4 CSS. APIs that makes sense in the Angular ecosystem. No dependencies on 3rd party JavaScript.</p>
-    <a class="btn btn-lg btn-primary  pull-right" href="https://ng-bootstrap.github.io/#/components/accordion/api" role="button">ng-boostrap &raquo;</a>
-  </div>
+  <a class="btn btn-lg btn-primary pull-right" href="https://getbootstrap.com/docs/4.0/components/alerts/" role="button">Bootstraps
+    reusable components &raquo;</a>
+
 
 </div>
+<div class="jumbotron my-5 text-center">
+  <h1 class="display-2">ng-bootstrap</h1>
+  <h1><small class="text-muted">Angular meets bootstrap</small></h1>
 
-<div class="container">
+  <div class="row my-4">
+    <p class="lead">Angular - specific widgets built from ground and using Bootstrap 4 CSS. APIs that makes sense in the
+      Angular ecosystem. No dependencies on 3rd party JavaScript.</p>
+    <div class="alert alert-warning col-lg-6 m-auto" role="alert">
+      <p>
+        <b>Should I add bootstrap.js or bootstrap.min.js to my project?</b>
+      </p>
+      <hr>
+      <p>
+        No, the goal of ng-bootstrap is to completely replace JavaScript implementation for components. Nor should you include other dependencies like jQuery or popper.js. It is not necessary and might interfere with ng-bootstrap code.
+      </p>
+    </div>
+
+
+  </div>
+
+  <a class="btn btn-lg btn-primary  pull-right" href="https://ng-bootstrap.github.io/#/components/"
+     role="button">ng-boostrap &raquo;</a>
+</div>
+
+<div class="container my-5">
   <h1 class="display-2">ng-bootstrap examples </h1>
-  <!--
-  <div class="jumbotron jumbotron-fluid rounded border border-dark">
-    <div class="container">
-      <h1 class="display-5">Launch modal box</h1>
-      <p class="lead">This is the classic modal box. Note that a special component from ng-bootstrap is used.</p>
-      <ngbd-modal-basic class="pull-right"></ngbd-modal-basic>
-    </div>
-  </div>
-
-  <div class="jumbotron jumbotron-fluid rounded border border-danger ">
-    <div class="container">
-      <h1 class="display-5">Date picker</h1>
-      <p class="lead">This is the classic modal box. Note that a special component from ng-bootstrap is used.</p>
-    </div>
-  </div>
-
-
-  <div class="jumbotron jumbotron-fluid rounded border border-info">
-    <div class="container">
-      <h1 class="display-5">Progress bar from ng-bootstrap</h1>
-      <p class="lead">Static at 75% </p>
-      <ngbd-progressbar-labels></ngbd-progressbar-labels>
-      <p class="lead">Dynamic; Look at it go!</p>
-
-      <p><ngb-progressbar type="info" [value]="loading" [striped]="true" [animated]="true"><i>{{loading}}%</i></ngb-progressbar></p>
-
-      <a class="btn btn-lg btn-primary pull-right" href="https://ng-bootstrap.github.io/#/components/progressbar/examples" role="button">ng-boostrap Progressbar &raquo;</a>
-
-
-    </div>
-  </div -->
-
 
 
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 m-2 border border-light">
       <h1>Date picker</h1>
       <p>A lightweight and highly configurable datepicker directive</p>
-      <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" ></ngb-datepicker>
+      <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
       <p>
         <button class="btn btn-sm btn-outline-primary" (click)="selectToday()">Select Today</button>
       </p>
@@ -75,55 +75,70 @@
 
     </div>
 
-    <div class="col-lg-4 border border-light">
+    <div class="col-lg-4 m-2 border border-light">
       <h2>Modal box</h2>
       <p>This is the classic modal box. Note that a special component from ng-bootstrap is used.</p>
-      <p><ngbd-modal-basic class="pull-right"></ngbd-modal-basic></p>
+      <p>
+        <ngbd-modal-basic class="pull-right"></ngbd-modal-basic>
+      </p>
     </div>
-    <div class="col-lg-4 border border-light">
+    <div class="col-lg-5 m-1 border border-light">
       <h1>Progress bar</h1>
-        <p>Different progress bars</p>
-        <p>Static at 75% </p>
-        <ngbd-progressbar-labels></ngbd-progressbar-labels>
-        <p>Simulated loading; Look at it go!</p>
+      <p>Different progress bars</p>
+      <p>Static at 75% </p>
+      <ngbd-progressbar-labels></ngbd-progressbar-labels>
+      <p>Simulated loading; Look at it go!</p>
 
-        <p><ngb-progressbar type="info" [value]="loading" [striped]="true" [animated]="true"><i>{{loading}}%</i></ngb-progressbar></p>
+      <p>
+        <ngb-progressbar type="info" [value]="loading" [striped]="true" [animated]="true"><i>{{loading}}%</i>
+        </ngb-progressbar>
+      </p>
 
 
     </div>
 
 
-    <div class="col-lg-4 border border-light">
+    <div class="col-lg-4 m-2 border border-light">
       <h1>Date picker</h1>
-      <p>Skynet gets self aware</p>
-      <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" [showWeekNumbers]="true" [minDate]="minDate"></ngb-datepicker>
-      <button class="btn btn-sm btn-outline-primary" (click)="dp.navigateTo({year: 1997, month: 8, date: 29}); selectDate(1997, 8, 29)">29-08-1997</button>
 
+      <span>With a specific date Skynet gets self aware</span>
+      <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" [showWeekNumbers]="true"
+                      [minDate]="minDate"></ngb-datepicker>
+      <button class="btn btn-sm btn-outline-primary"
+              (click)="dp.navigateTo({year: 1997, month: 8, date: 29}); selectDate(1997, 8, 29)">29-08-1997
+      </button>
 
-      <pre>Month: {{ date.month }}.{{ date.year }}</pre>
-      <pre>Model: {{ model | json }}</pre>
-      <pre>minDate: {{ minDate | json }}</pre>
+      <button type="button" class="btn  btn-sm btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        Show details
+      </button>
+      <span [ngbCollapse]="!isCollapsed">
+        <pre>Month: {{ date.month }}.{{ date.year }}</pre>
+        <pre>Model: {{ model | json }}</pre>
+        <pre>minDate: {{ minDate | json }}</pre>
 
+      </span>
     </div>
   </div>
+</div>
+<hr>
 
-  <div class="row">
+<div class="row">
+  <p>More examples from the ng-bootstrap api</p>
 
-    <p>More examples from the ng-bootstrap api</p>
-
-    <ul>
-      <li><a href="https://ng-bootstrap.github.io/#/components/datepicker/examples" role="button">Date Picker
-        examples &raquo;</a></li>
-      <li><a href="https://ng-bootstrap.github.io/#/components/progressbar/examples" role="button">ng-boostrap
-        Progressbar &raquo;</a></li>
-      <li><a href="https://ng-bootstrap.github.io/#/components/datepicker/examples" role="button">Date Picker
-        examples &raquo;</a></li>
-    </ul>
-
-  </div>
-
-
-
-
+  <ul>
+    <li><a href="https://ng-bootstrap.github.io/#/components/datepicker/examples" role="button">Date Picker
+      examples &raquo;</a></li>
+    <li><a href="https://ng-bootstrap.github.io/#/components/progressbar/examples" role="button">ng-boostrap
+      Progressbar &raquo;</a></li>
+    <li><a href="https://ng-bootstrap.github.io/#/components/datepicker/examples" role="button">Date Picker
+      examples &raquo;</a></li>
+  </ul>
 
 </div>
+
+
+
+
+
+
