@@ -1,11 +1,11 @@
-<div id="bootstrap" class="jumbotron my-3">
+<div id="bootstrap" class="jumbotron my-3 text-center">
   <div class="h1 text-center"><a
     title="By Bootstrap (http://blog.getbootstrap.com) [Public domain], via Wikimedia Commons"
     href="https://commons.wikimedia.org/wiki/File%3ABoostrap_logo.svg">
     <img width="300" alt="Boostrap logo"
          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/512px-Boostrap_logo.svg.png"/></a>
   </div>
-  <h1 class="display-2 text-center">{{title_bootstrap}}</h1>
+  <h1 class="display-3 text-center">{{title_bootstrap}}</h1>
   <hr>
   <div class="row my-4">
 
@@ -28,13 +28,13 @@
     </div>
 
   </div>
-  <a class="btn btn-lg btn-primary pull-right" href="https://getbootstrap.com/docs/4.0/components/alerts/" role="button">Bootstraps
+  <a class="btn btn-lg btn-primary pull-lg-right" href="https://getbootstrap.com/docs/4.0/components/alerts/" role="button">Bootstraps
     reusable components &raquo;</a>
 
 
 </div>
 <div class="jumbotron my-5 text-center">
-  <h1 class="display-2">ng-bootstrap</h1>
+  <h1 class="display-3">ng-bootstrap</h1>
   <h1><small class="text-muted">Angular meets bootstrap</small></h1>
 
   <div class="row my-4">
@@ -53,7 +53,7 @@
 
   </div>
 
-  <a class="btn btn-lg btn-primary  pull-right" href="https://ng-bootstrap.github.io/#/components/"
+  <a class="btn btn-lg btn-primary  pull-lg-right" href="https://ng-bootstrap.github.io/#/components/"
      role="button">ng-boostrap &raquo;</a>
 </div>
 
@@ -119,6 +119,37 @@
 
       </span>
     </div>
+
+    <div class="col-lg-4 m-2 border border-light">
+      <h1>Popover</h1>
+      <p>
+        <button type="button" class="btn btn-outline-secondary" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+                popoverTitle="Pop title">Hover over me!
+        </button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-outline-secondary" placement="right"
+                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">Popover on right
+        </button>
+      </p>
+    </div>
+    <div class="col-lg-4 m-2 border border-light">
+      <h1>Collapse</h1>
+      <p>
+        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          Toggle
+        </button>
+      </p>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed">
+        <div class="card">
+          <div class="card-body">
+            You can collapse this card by clicking Toggle
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 <hr>
