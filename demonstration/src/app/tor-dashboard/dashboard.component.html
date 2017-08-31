@@ -4,7 +4,7 @@
 <div class="jumbotron jumbotron-fluid rounded border border-light p-3">
   <h3 class="display-5">Top Heroes</h3>
   <div *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]" class="card m-3">
-    <div class="card-header"> <h4>{{hero.name}}</h4></div>
+    <div class="card-header display-4">{{hero.name}}</div>
   </div>
 </div>
 <div class="jumbotron jumbotron-fluid rounded border border-light ">

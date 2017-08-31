@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpModule }    from '@angular/http';
@@ -41,7 +41,9 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
     DemoAngularComponent,
     HeroSearchComponent,
     BootstrapNavBarComponent,
-    FrontpageComponent
+    FrontpageComponent,
+    HeroesComponent,
+    HeroSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,9 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule,
     NgbModule.forRoot()
+
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [HeroService],
   bootstrap: [AppComponent]
 })
