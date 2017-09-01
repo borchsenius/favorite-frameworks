@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DashboardComponent } from './dashboard.component';
-import {Hero} from "../tor-hero/hero";
+import {Hero} from "../toh-hero/hero";
 import {By} from "@angular/platform-browser";
 import { DebugElement }    from '@angular/core';
 import {RouterTestingModule} from "@angular/router/testing";
-import {HeroSearchComponent} from "../tor-hero-search/hero-search.component";
-import {HeroService} from "../tor-hero/hero.service";
+import {HeroSearchComponent} from "../toh-hero-search/hero-search.component";
+import {HeroService} from "../toh-hero/hero.service";
 import {HttpModule} from "@angular/http";
 
 

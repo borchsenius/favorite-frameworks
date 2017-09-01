@@ -1,9 +1,9 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardComponent }   from './tor-dashboard/dashboard.component';
-import { HeroesComponent }      from './tor-heroes/heroes.component';
-import { HeroDetailComponent }  from './tor-hero-detail/hero-detail.component';
+import { DashboardComponent }   from './toh-dashboard/dashboard.component';
+import { HeroesComponent }      from './toh-heroes/heroes.component';
+import { HeroDetailComponent }  from './toh-hero-detail/hero-detail.component';
 import {DemoAngularComponent} from "./demo-angular/demo-angular.component";
 import {DemoBootstrapComponent} from "./demo-bootstrap/demo-bootstrap.component";
 import {DemoFontawesomeComponent} from "./demo-fontawesome/demo-fontawesome.component";
