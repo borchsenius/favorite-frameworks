@@ -30,4 +30,6 @@ describe('HeroesComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  // TODO https://angular.io/guide/testing#provide-service-test-doubles
 });
