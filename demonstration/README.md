@@ -1,7 +1,9 @@
 # Favorite Frameworks web app
-This is a demonstration web app that use angular 4, bootstrap 4 and font awesome 4.7.
+This is a demonstration web app that use angular 4, bootstrap 4 and font awesome 4.7. The hero management from [Tour of Heroes](https://angular.io/tutorial) is implemented.
+Prerequisites npm, typescript and git.
 
-
+  `$ npm install -g @angular/cli`
+  
  `$ git clone git@github.com:LundOgBendsen/ufm.git`
 
  `$ cd demonstration`

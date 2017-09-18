@@ -1,10 +1,10 @@
 <div class="text-center">
-  <h1 class="display-1 d-sm-flex">{{title}}</h1>
+  <h1 class="display-3 d-sm-flex">{{title}}</h1>
 </div>
 <div class="jumbotron jumbotron-fluid rounded border border-light p-3">
-  <h3 class="display-5">Top Heroes</h3>
+  <h3>Top Heroes</h3>
   <div *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]" class="card m-3">
-    <div class="card-header display-4">{{hero.name}}</div>
+    <div class="card-header">{{hero.name}}</div>
   </div>
 </div>
 <div class="jumbotron jumbotron-fluid rounded border border-light ">
