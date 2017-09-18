@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 
 const now = new Date();
@@ -8,12 +8,14 @@ const now = new Date();
   templateUrl: './demo-bootstrap.component.html',
   styleUrls: ['./demo-bootstrap.component.css']
 })
-export class DemoBootstrapComponent implements OnInit {
+export class DemoBootstrapComponent implements OnInit, OnDestroy {
   title_bootstrap = 'Bootstrap 4.0.0';
 
   // data structures for the progress bar
-  private loading: number;
-  private timer; //will be an id ref for setInterval
+  public loading: number;
+  private timer; // will be an id ref for setInterval
+  public isCollapsed: boolean;
+  public isCollapsedSimple: boolean;
 
   // data structures for the date picker
   model: NgbDateStruct;
@@ -33,16 +35,16 @@ export class DemoBootstrapComponent implements OnInit {
   // counter
   increaseCounter() {
 
-    if(this.loading<100 ){
+    if (this.loading < 100) {
       this.loading = this.loading + 1;
     }else {
-      console.log("loop");
+      console.log('loop');
       this.loading = 0;
     }
   }
 
-  startTimerX() {
-    console.log("Starting timer");
+  startTimer() {
+    console.log('Starting timer');
     this.timer = setInterval(() => this.increaseCounter(), 200);
   }
 
@@ -58,12 +60,12 @@ export class DemoBootstrapComponent implements OnInit {
 
   ngOnInit() {
     this.loading = 0;
-    this.startTimerX();
+    this.startTimer();
 
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     if (this.timer) {
-      console.log("Stopping timer ");
+      console.log('Stopping timer');
       clearInterval(this.timer);
     }
   }
