@@ -1,3 +1,4 @@
+# The build instructions are taken from https://github.com/avatsaev/angular4-docker-example
 ### STAGE 1: Build ###
 
 # We label our stage as 'builder'
@@ -8,9 +9,9 @@ COPY package.json package-lock.json ./
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN npm i && mkdir /demonstration && cp -R ./node_modules ./demonstration
+RUN npm i && mkdir /favorite-frameworks && cp -R ./node_modules ./favorite-frameworks
 
-WORKDIR /demonstration
+WORKDIR /favorite-frameworks
 
 COPY . .
 
@@ -23,12 +24,12 @@ RUN $(npm bin)/ng build --prod --build-optimizer
 FROM nginx:1.13.3-alpine
 
 ## Copy our default nginx config
-COPY nginx/default.conf /etc/nginx/conf.d/
+COPY docker-build/nginx/default.conf /etc/nginx/conf.d/
 
 ## Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-COPY --from=builder /ng-app/dist /usr/share/nginx/html
+COPY --from=builder /favorite-frameworks/dist /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
