@@ -4,7 +4,7 @@ Prerequisites npm, typescript and git.
 
   `$ npm install -g @angular/cli`
   
- `$ git clone git@github.com:LundOgBendsen/ufm.git`
+ `$ git clone git@github.com:borchsenius/favorite-frameworks.git`
 
  `$ cd demonstration`
 
