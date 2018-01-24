@@ -6,7 +6,7 @@ Prerequisites npm, typescript and git.
   
  `$ git clone git@github.com:borchsenius/favorite-frameworks.git`
 
- `$ cd demonstration`
+ `$ cd favorite-frameworks`
 
  `$ npm install`
   

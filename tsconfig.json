@@ -15,5 +15,13 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "src/app/**/*.ts",
+    "src/*.ts"
+
+  ],
+  "exclude": [
+    // ...
+  ],
 }
